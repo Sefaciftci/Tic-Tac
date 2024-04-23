@@ -1,19 +1,20 @@
 import React,{useState} from "react";
 
-export default function Square() {
+export default function Square({currentState , changeTurn, row, col}) {
 
     const [value , setValue] = useState(null);
     const handleClick = () => {
-      setValue('X');
+            setValue(currentState);
+            changeTurn(row,col);
     } 
   
     return(
         <>
-        <button 
+        <div 
             className='square'
             onClick={handleClick}> 
           {value}
-        </button>
+        </div>
       </>
     )
   }

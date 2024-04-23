@@ -1,6 +1,18 @@
+.board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
 .square{
-    font-size: 30px;
+    font-size: 40px;
+    border: 2px solid black;
     font-weight: bold;
-    width: 60px;
-    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
 }
