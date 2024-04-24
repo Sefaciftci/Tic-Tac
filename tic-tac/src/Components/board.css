@@ -1,13 +1,29 @@
+.container{
+    text-align: center;
+    color: white;
+}
+.header h3{
+    margin-top: 50px;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+}
+.header h3 span{
+    font-size: 45px;
+    color: rgb(86, 228, 228);
+}
+
+
 .board{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px;
+    margin: 80px;
 }
 
 .square{
     font-size: 40px;
-    border: 2px solid black;
+    border: 2px solid white;
+    border-radius: 15px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -15,4 +31,10 @@
     width: 100px;
     height: 100px;
     cursor: pointer;
+}
+
+.message{
+    padding: 10px 15px;
+    background-color: rgb(43, 204, 204);
+    font-size: 30px;
 }
